@@ -7,15 +7,25 @@ list.
 ### Objectives:
 
 * Project should be targeting either Android or iOS and should be adapted for mobile device usage, with touch input and gestures
-* You can use a library that we can provide by your request to assist you with calculating Roadster's position from orbital data that you will get from the API
+* You can use a library that we can provide by your request to assist you with calculating Roadster's position from orbital data
 * Create main menu that will let the user to choose between seeing Tesla Roadster on the orbit or exploring SpaceX launches list
-* When the user chooses to see Tesla Roadster on the orbit he should see some 3D model that symbolizes the sun and a 3D model on it's orbit that symbolizes the car. Every 10 minutes SpaceX API should be fetched for new orbital data of the Roadster (data that the API returns changes every 10 minutes). Roadster's position on the orbit should be updated and a visible line should be created between last and current position on an orbit.
+* When the user chooses to see Tesla Roadster on the orbit he should see some 3D model that symbolizes the sun and a 3D model on it's orbit that symbolizes the car. Use orbital data from CSV file `Roadster orbital elements JPL Horizon.csv` and provided library `OrbitalElements.dll` (or your own implementation) to present sped up simulation of Tesla Roadster position on the orbit of the Sun. This simulation should run with speed of at least 24 hours / second and Roadster's position on the orbit can jump from one position to the next without any interpolation
+* It will suffice if the simulation will only use data between 07.02.2018 and 08.10.2019
+* When the simulation ends, it should loop from the beginning of provided data set
+* After updating Roadster's position show the last 20 positions as a line that connects to current Roadster's position (think tail of a comet).
+* While the sped up simulation is playing and Roadster's position is being updated show all the current orbital data as a text in the corner of the screen where date will be presented in local time zone, not UTC.
 * When the user chooses to see SpaceX launches list in the main menu, he should see fullscreen Unity UI that will present a scrollable list containing interactable elements. Each interactable element in the list should represent one SpaceX launch and provide text with name of the mission and number of payloads that were involved in the mission, as well as the name of the rocket used in the launch and it's country of origin.
 * Each launch in the list should have an image that symbolizes if the launch has already happened or it is a future launch.
 * Tapping on any launch element in the list should open a popup window with information about each ship used in the launch: number of missions it was used in, name, ship type and home port
 
 ### Optional objectives:
 
-* Create your own solution for calculating Roadster's position from orbital data fetched from the API.
-* Implement touch gestures to rotate the camera when looking at Roadster's orbit
+* Create your own solution for calculating Roadster's position from orbital data
+* Use orbital data after 08.10.2019 from the provided CSV file while interpolating Roadster's position if there is more than 24 hours between consecutive data records - Roadster position in simulation should not suddenly jump between positions, but move smoothly while maintaining close to constant speed of simulation
+* Implement touch gestures to rotate the camera when looking at Roadster's orbit simulation
+* Launches list should use object pooling to optimize resources consumption
 * In launch details popup create a button for each ship that will open url to the photo of the ship
+
+### Orbital Elements
+
+We are providing a library (OrbitalElements.dll) that will help you with transforming orbital elements into cartesian space positional vector.
