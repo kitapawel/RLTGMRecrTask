@@ -7,7 +7,6 @@ list.
 ### Objectives:
 
 * Project should be targeting either Android or iOS and should be adapted for mobile device usage, with touch input and gestures
-* You can use a library that we can provide by your request to assist you with calculating Roadster's position from orbital data
 * Create main menu that will let the user to choose between seeing Tesla Roadster on the orbit or exploring SpaceX launches list
 * When the user chooses to see Tesla Roadster on the orbit he should see some 3D model that symbolizes the sun and a 3D model on it's orbit that symbolizes the car. Use orbital data from CSV file `Roadster orbital elements JPL Horizon.csv` and provided library `OrbitalElements.dll` (or your own implementation) to present sped up simulation of Tesla Roadster position on the orbit of the Sun. This simulation should run with speed of at least 24 hours / second and Roadster's position on the orbit can jump from one position to the next without any interpolation
 * It will suffice if the simulation will only use data between 07.02.2018 and 08.10.2019
