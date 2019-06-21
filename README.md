@@ -4,6 +4,8 @@ Your task is to prepare Unity project that will fetch and display SpaceX's Tesla
 an interface that will list all SpaceX launches with additional details about the launch provided when interacting with any launch on the 
 list.
 
+SpaceX API: https://documenter.getpostman.com/view/2025350/RWaEzAiG
+
 ### Objectives:
 
 * Project should be targeting either Android or iOS and should be adapted for mobile device usage, with touch input and gestures
