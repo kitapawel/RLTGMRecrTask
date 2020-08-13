@@ -38,7 +38,7 @@ The Calculations type exposes the following members.
 ## Methods
 |                                                              | Name                                                         | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Public method](media/pubmethod.gif "Public method")![Static member](media/static.gif "Static member") | [CalculateOrbitalPosition](Calculations.CalculateOrbitalPosition) | Given set of orbital elements returns position vector of an orbiting body in Cartesian space which units are 10^3 km. |
+| ![Public method](media/pubmethod.gif "Public method")![Static member](media/static.gif "Static member") | [CalculateOrbitalPosition](./Calculations.CalculateOrbitalPosition.md) | Given set of orbital elements returns position vector of an orbiting body in Cartesian space which units are 10^3 km. |
 
 
 
