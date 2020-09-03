@@ -24,5 +24,4 @@ public class SceneSwitcher : MonoBehaviour
         Debug.Log("Closing the app.");
         Application.Quit();
     }
-
 }

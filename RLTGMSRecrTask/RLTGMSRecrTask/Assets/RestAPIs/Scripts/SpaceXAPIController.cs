@@ -15,8 +15,6 @@ public class SpaceXAPIController : MonoBehaviour
     public GameObject loadingMessage;
 
     private readonly string allLaunchesURL = "https://api.spacexdata.com/v3/launches";
-    private readonly string oneShipURL = "https://api.spacexdata.com/v3/ships/";
-    private readonly string allRocketsURL = "https://api.spacexdata.com/v3/rockets";
     private readonly string oneRocketURL = "https://api.spacexdata.com/v3/rockets/";
 
     private void Awake()

@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CameraController
     - LaunchDataContainer
+    - Orbiting
     - PopulateLaunchInfo
     - PopupController
     - SceneSwitcher
@@ -221,6 +223,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -229,6 +235,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11162}
     - Class: 114
       Script: {instanceID: 11180}
+    - Class: 114
+      Script: {instanceID: 11340}
     - Class: 114
       Script: {instanceID: 11380}
     - Class: 114
@@ -245,6 +253,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12982}
     - Class: 114
       Script: {instanceID: 12984}
+    - Class: 114
+      Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 15422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -720,6 +732,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 7153380c5fe18f0c2afbd19211e4a432
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Orbiting
+  - hash:
+      serializedVersion: 2
+      Hash: b6503461217b17c4c3ae31e83e71c90c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

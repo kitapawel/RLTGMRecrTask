@@ -75,7 +75,7 @@ public class PopupController : MonoBehaviour
         }
 
         UnityWebRequest shipImageRequest = UnityWebRequestTexture.GetTexture(shipImageURL);        
-        yield return shipImageRequest.SendWebRequest();        
+        yield return shipImageRequest.SendWebRequest();
         if (shipImageRequest.isNetworkError || shipImageRequest.isHttpError)
         {
             Debug.LogError(shipImageRequest.error);

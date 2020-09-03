@@ -64,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ExternalAssets\Planet Earth Free\SpinFree.cs" />
+    <Compile Include="Assets\RestAPIs\Scripts\CameraController.cs" />
     <Compile Include="Assets\RestAPIs\Scripts\LaunchDataContainer.cs" />
+    <Compile Include="Assets\RestAPIs\Scripts\Orbiting.cs" />
     <Compile Include="Assets\RestAPIs\Scripts\PopulateLaunchInfo.cs" />
     <Compile Include="Assets\RestAPIs\Scripts\PopupController.cs" />
     <Compile Include="Assets\RestAPIs\Scripts\SceneSwitcher.cs" />
