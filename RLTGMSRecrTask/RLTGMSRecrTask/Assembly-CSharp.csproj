@@ -64,9 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ExternalAssets\Planet Earth Free\SpinFree.cs" />
-    <Compile Include="Assets\LaunchDataContainer.cs" />
-    <Compile Include="Assets\PopupController.cs" />
+    <Compile Include="Assets\RestAPIs\Scripts\LaunchDataContainer.cs" />
     <Compile Include="Assets\RestAPIs\Scripts\PopulateLaunchInfo.cs" />
+    <Compile Include="Assets\RestAPIs\Scripts\PopupController.cs" />
+    <Compile Include="Assets\RestAPIs\Scripts\SceneSwitcher.cs" />
     <Compile Include="Assets\RestAPIs\Scripts\SpaceXAPIController.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

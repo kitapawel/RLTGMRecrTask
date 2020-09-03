@@ -8,7 +8,6 @@ using TMPro;
 using System;
 using System.Runtime.CompilerServices;
 using System.IO;
-using UnityEditor.VersionControl;
 
 public class SpaceXAPIController : MonoBehaviour
 {
@@ -29,7 +28,6 @@ public class SpaceXAPIController : MonoBehaviour
     {
         StartCoroutine(GetSpaceXAPIData());
     }
-
     IEnumerator GetSpaceXAPIData()
     {
         loadingMessage.SetActive(true);
@@ -46,7 +44,6 @@ public class SpaceXAPIController : MonoBehaviour
         JSONNode launchInfoFromWeb = JSON.Parse(launchInfoRequest.downloadHandler.text);
 
         /*------------------Iterate through info from the downloaded data------------------*/
-        int itemNumber = 0;
         foreach (JSONNode flight in launchInfoFromWeb)
         {
             int flightNumber = flight["flight_number"];
@@ -75,13 +72,8 @@ public class SpaceXAPIController : MonoBehaviour
             JSONNode rocketInfoFromWeb = JSON.Parse(rocketInfoRequest.downloadHandler.text);
             string countryOfOrigin = rocketInfoFromWeb["country"];
 
-            Debug.Log("Item: " + itemNumber + "; Flight no.: " + flight["flight_number"] + "; Mission name: " + missionName + 
-                "; Rocket name: " + rocketName + "; No. of payloads: " + numberOfPayloads + "; Country: " + countryOfOrigin);
-            viewPopulator.Populate(missionName, rocketName, numberOfPayloads, countryOfOrigin,isFlightUpcoming, flightNumber);
-            
-            itemNumber += 1;            
+            viewPopulator.Populate(missionName, rocketName, numberOfPayloads, countryOfOrigin,isFlightUpcoming, flightNumber);          
         }
         loadingMessage.SetActive(false);
-    }
-
+    }    
 }

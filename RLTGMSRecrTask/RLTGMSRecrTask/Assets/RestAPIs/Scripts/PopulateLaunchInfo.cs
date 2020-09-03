@@ -8,7 +8,6 @@ public class PopulateLaunchInfo : MonoBehaviour
 {
 	public Sprite testImage;
 	public GameObject infoPiece;
-
 	public void Populate(string nameOfMission, string nameOfRocket, int numberOfPayloads, string countryOfOrigin, bool isFlightUpcoming, int flightNumber)
 	{	
 		//populate the information required
@@ -20,17 +19,17 @@ public class PopulateLaunchInfo : MonoBehaviour
 		statusImage.sprite = testImage;
 
 		//set green or red icon for status of flight
-		if (isFlightUpcoming){
+		if (isFlightUpcoming)
+		{
 			statusImage.color = new Color32(255, 0, 0, 100);
 		}
-        else {
+		else 
+		{
 			statusImage.color = new Color32(0, 255, 0, 100);
 		}
 
 		//add flight number info to each information object to enable further data retrieval on demand
-		infoPiece.GetComponent<LaunchDataContainer>().flightNumber = flightNumber;
-		
+		infoPiece.GetComponent<LaunchDataContainer>().flightNumber = flightNumber;		
 		GameObject instantiadedInformationPiece = Instantiate(infoPiece, transform);
-
 	}	
 }
