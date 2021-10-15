@@ -1,4 +1,4 @@
-# Recruitment task
+# SpaceX data API connection app
 
 A small app that:
 - downloads data from a SpaceX API, takes in data in JSON and presents it in the UI.
